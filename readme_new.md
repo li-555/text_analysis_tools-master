@@ -1,8 +1,38 @@
-# EvidentGraphTrust
+## 目录结构
 
+- `test_data/`：测试数据
+- `text_analysis_tools/`：功能 API
+- `examples.py`：使用样例
+- `social_media_text_intelligence.py`：轻量舆情分析工具包（如已加入仓库）
+
+
+## 功能一览
+
+### A. text_analysis_tools（通用文本分析）
+
+- 文本分类
+- 文本聚类
+- 文本相似性
+- 关键词抽取
+- 关键短语抽取
+- 情感分析
+- 文本纠错
+- 文本摘要
+- 主题关键词
+- 同义词、近义词
+- 事件三元组抽取
+
+### B. Social Media Text Intelligence Toolkit（轻量舆情分析）
+
+- 文本清洗：去掉 URL、话题、@、多余空白与标点
+- 分词：优先使用 jieba，缺省时采用正则分词
+- 关键词 / 主题抽取：简单的 TF-IDF 频率策略
+- 情感分析：小型情感词典的符号得分
+- 事件触发词：基于关键词的轻量事件标记
+- 时间趋势：按天/小时聚合情绪占比
 ## Social Media Text Intelligence Toolkit
 
-参考 [`murray-z/text_analysis_tools`](https://github.com/murray-z/text_analysis_tools) 的思路，仓库新增了一个轻量级的中文舆情分析工具包，覆盖文本清洗、主题/情感/事件抽取以及时间趋势汇总。
+仓库新增了一个轻量级的中文舆情分析工具包，覆盖文本清洗、主题/情感/事件抽取以及时间趋势汇总。
 
 ### 功能一览
 
